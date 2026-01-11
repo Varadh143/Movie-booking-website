@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- NAVBAR -->
+     <nav class="navbar">
+        <div class="logo">🎬 CineBook</div>
+        <ul class="nav-links">
+            <li>Home</li>
+            <li>Movies</li>
+            <li>Theatres</li>
+            <li>Bookings</li>
+            <li>Profile</li>
+        </ul>
+     </nav>
+
+     <!-- HERO SECTION -->
+      <header class="hero">
+        <h1>Book Movie Tickets Online</h1>
+        <p>Choose your favourite movies and seats easily</p>
+        <button class="hero-btn">Explore Movies</button>
+      </header>
+
+      <!-- MOVIE SECTION -->
+       <section class="movies-section">
+        <h2 class="section-title">Now Showing</h2>
+
+        <div class="movie-grid">
+
+            <!-- MOVIE CARD -->
+             <div class="movie-card">
+                <img src="https://images.hdqwalls.com/download/avengers-endgame-2019-official-new-poster-3p-1280x2120.jpg">
+                <div class="movie-info">
+                    >Action | English | 3h 2m</p>
+                  <h3>Avengers: Endgame</h3>
+                    <p class="price">₹150</p>
+                    <button onclick="selectMovie(`Avengers`,150)">Book Now</button>
+                </div>
+
+                <div class="movie-card">
+                    <img src="https://lumiere-a.akamaihd.net/v1/images/p_avatar_de27b20f.jpeg">
+                    <div class="movie-info">
+                        <h3>Inception</h3>
+                        <p>Thriller | English | 2h 48m</p>
+                        <p class="price">₹200</p>
+                        <button onclick="selectMovie('Avatar' ,200)">Book Now</button>
+                    </div>
+
+                    <div class="movie-card">
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhY-4WtmGlE97xRFaOVj5G4KO2OwVk2biQhU764Dv5IDSGGrv0T8EVr43OTy5Hf8Mk8EfpoDQXilBnUUrLUSmVHvGkE2xlXQQpflTSLyZ7kO3HRF7x3v8_EtgNhKSXJbFSy_wqZWKzisQ25/s640/inception-poster.jpg">
+                        <div class="movie-info">
+                            <h3>Inception</h3>
+                            <p>Thriller | English | 2h 48m</p>
+                            <p class="price">₹180</p>
+                            <button onclick="selectMovie('Inception' ,180)">Book Now</button>
+                        </div>
+
+                        <div class="movie-card">
+                            <img src="https://cdn.britannica.com/15/181115-050-13EF0AFB/Matthew-McConaughey-Interstellar-Christopher-Nolan.jpg?w=400&h=300&c=crop">
+                            <div class="movie-info">
+                                <h3>Interstellar</h3>
+                                <p>Sci-fi | English | 2h 55m</p>
+                                <p class="price">₹170</p>
+                                <button onclick="selectMovie('Interstellar' ,170)">Book Now</button>
+                            </div>
+                        </div>
+                     </div>
+                </div>
+             </div>
+        </div>
+       </section>
+
+       <!-- THEATRE SECTION -->
+        <section class="theatre-section">
+            <h2 class="section-title">Select Theatre</h2>
+
+            <div class="theatre-list">
+                <div class="theatre-card">PVR Cinemas</div>
+                <div class="theatre-card">INOX</div>
+                <div class="theatre-card">AGS Cinemas</div>
+                <div class="theatre-card">SPI Cinemas</div>
+            </div>
+        </section>
+
+        <!-- SEAT SELECTION -->
+         <section class="seat-section">
+            <h2 class="section">Select Seats</h2>
+
+            <div class="screen">SCREEN</div>
+
+            <div class="seat-layout">
+
+                <div class="row">
+                    <div class="seat" onclick="selectSeat(this)">A1</div>
+                    <div class="seat" onclick="selectSeat(this)">A2</div>
+                    <div class="seat" onclick="selectSeat(this)">A3</div>
+                    <div class="seat" onclick="selectSeat(this)">A4</div>
+                    <div class="seat" onclick="selectSeat(this)">A5</div>
+                </div>
+
+                <div class="row">
+                    <div class="seat" onclick="selectSeat(this)">B1</div>
+                    <div class="seat" onclick="selectSeat(this)">B2</div>
+                    <div class="seat" onclick="selectSeat(this)">B3</div>
+                    <div class="seat" onclick="selectSeat(this)">B4</div>
+                    <div class="seat" onclick="selectSeat(this)">B5</div>
+                </div>
+
+                <div class="row">
+                    <div class="seat" onclick="selectSeat(this)">C1</div>
+                    <div class="seat" onclick="selectSeat(this)">C2</div>
+                    <div class="seat" onclick="selectSeat(this)">C3</div>
+                    <div class="seat" onclick="selectSeat(this)">C4</div>
+                    <div class="seat" onclick="selectSeat(this)">C5</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- FOOTER -->
+     <footer>
+        <div class="footer-content">
+            <p>© 2025 CineBook</p>
+            <p>HTML * CSS * JavaScript Practice Project</p>
+        </div>
+     </footer>
+
+     <script src="script.js"></script>
+</body>
+</html>
