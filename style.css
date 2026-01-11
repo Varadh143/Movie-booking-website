@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #fff;
+    color: #333;
+}
+
+/* NAVBAR */
+.navbar {
+    background: #0d47a1;
+    color: white;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+/* HERO */
+.hero {
+    background: linear-gradient(to right, #1565c0, #1e88e5);
+    color: white;
+    text-align: center;
+    padding: 70px 20px;
+}
+
+.hero-btn {
+    margin-top: 20px;
+    padding: 12px 25px;
+    border: none;
+    background: white;
+    color: #1565c0;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+/* SECTIONS */
+.section-title {
+    text-align: center;
+    font-size: 28px;
+    margin: 40px 0 20px;
+}
+
+/* MOVIES */
+.movie-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    padding: 20px 50px;
+}
+
+.movie-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.movie-info {
+    padding: 15px;
+}
+
+.movie-info button {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    background: #0d47a1;
+    color: white;
+    border: none;
+}
+
+/* THEATRE */
+.theatre-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.theatre-card {
+    background: white;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 3px 8px tgba(0,0,0,0.1);
+}
+
+/* SEATS */
+.screen {
+    text-align: center;
+    background: #ccc;
+    width: 300px;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+.seat-layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    gap: 10px;
+    margin: 8px 0;
+}
+
+.seat {
+    background: #ddd;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.seat-selected {
+    background: #4caf50;
+    color: white;
+}
+
+/* SUMMARY */
+.summary-box {
+    width: 350px;
+    margin: auto;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.confirm-btn {
+    margin-top: 15px;
+    padding: 12px;
+    width: 100%;
+    background: #0d47a1;
+    color: white;
+    border: none;
+}
+
+/* FOOTER */
+.footer {
+    background: #0d47a1;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
