@@ -66,6 +66,11 @@ body {
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
+.movie-card img {
+    width: 200px;
+    border-radius: 10px;
+}
+
 .movie-info {
     padding: 15px;
 }
@@ -147,7 +152,7 @@ body {
 }
 
 /* FOOTER */
-.footer {
+footer {
     background: #0d47a1;
     color: white;
     text-align: center;
